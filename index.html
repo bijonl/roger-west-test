@@ -16,8 +16,11 @@
 </head>
 
 <body>
+    <div class="visually-hidden-focusable overflow-hidden">
+        <a class="d-inline-flex p-2 m-1" href="#page">Skip to main content</a>
+    </div>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navigation" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             Login Portal Link
         </div>
@@ -57,12 +60,217 @@
     </nav>
 
 
-    <main>
-        <section class="bg-primary container">
+    <main id="page" class="main" role="main">
+        <section class="bg-primary container" id="hero-area">
             Hero Area
         </section>
-        <section class="bg-primary container">
+        <section class="bg-white about-us-section" id="section-1">
+            <div class="about-us-section-container container">
+                <div class="about-us-section-title-row row">
+                    <div class="about-us-section-col col">
+                        <h2>Mauris euismod, magna nec</h2>
+                    </div>
+                </div>
+                <div class="about-us-section-content-row row">
+                    <div class="about-us-text-content col-sm-6">
+                        <div class="about-us-text-content-wrapper">
+                            <p>
+                                Vivamus metus ex, fringilla at cursus ultricies, eleifend a felis. Mauris pellentesque
+                                justo tristique nunc fringilla,
+                                ac eleifend dui pulvinar. Ut posuere magna id massa eleifend, ut pharetra enim tempor.
+                                <br>
+                                Nunc aliquam tortor ac rhoncus vulputate. Curabitur laoreet, urna non vestibulum
+                                feugiat, ex tortor porta mauris, vel
+                                egestas lectus mauris ut nunc. Integer varius dignissim arcu eget consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us-list-content col-sm-5 offset-sm-1">
+                        <ul class="bordered-list about-us-list">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+        <section class="wildcard-section">
+            <div class="wildcard-content-container container">
+                <div class="wildcard-content-row row">
+                    <div class="col-sm-2 wildcard-content-title-col">
+                        <h6>Lorem ipsum</h6>
+                    </div>
+                    <div class="ms-auto col-sm-3 single-wildcard-content-tile">
+                        Wildcard
+                    </div>
+                    <div class="col-sm-3 single-wildcard-content-tile">
+                        Wildcard
+                    </div>
+                    <div class="col-sm-3 single-wildcard-content-tile">
+                        Wildcard
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-and-image-section">
+            <div class="text-and-image-container container">
+                <div class="text-and-image-row row">
+                    <div class="text-col col-sm-6">
+                        <h2>Curabitur ut augue non felis</h2>
+                        <p>
+                            Proin pretium volutpat sapien, ut dictum odio venenatis eget. Suspendisse et eleifend nulla,
+                            sed gravida velit.
+                            Phasellus egestas lobortis ex, id ultrices nibh commodo ut. Mauris turpis nisi, vestibulum
+                            quis laoreet at, posuere nec
+                            enim.
+                        </p>
+                        <ul class="bordered-list">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="image-col col-sm-6">
+                        Image
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tile-callout-section">
+            <div class="tile-callout-container container">
+                <div class="tile-callout-title-row row">
+                    <div class="col tile-callout-title-col">
+                        <h6>Cras imperdiet</h6>
+                    </div>
+                </div>
+                <div class="tile-callout-row row">
+                    <div class="tile-callout-col col">
+                        <div class="single-tile-content-wrapper">
+                            <p>Mauris ipsum
+                                libero</p>
+                            <div class="icon-tile">Icon</div>
+                        </div>
+                    </div>
+                    <div class="tile-callout-col col">
+                        <div class="single-tile-content-wrapper">
+                            <p>Mauris ipsum
+                                libero</p>
+                            <div class="icon-tile">Icon</div>
+                        </div>
+                    </div>
+                    <div class="tile-callout-col col">
+                        <div class="single-tile-content-wrapper">
+                            <p>Phasellus ut blandit</p>
+                            <div class="icon-tile">Icon</div>
+                        </div>
+                    </div>
+                    <div class="tile-callout-col col">
+                        <div class="single-tile-content-wrapper">
+                            <p>Aliquam id erat sit
+                                amet enim</p>
+                            <div class="icon-tile">Icon</div>
+                        </div>
+                    </div>
+                    <div class="tile-callout-col col">
+                        <div class="single-tile-content-wrapper">
+                            <p>Cras sollicitud sodales lorem</p>
+                            <div class="icon-tile">Icon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stat-map-section">
+            <div class="stat-map-container container">
+                <div class="stat-map-title-row row">
+                    <div class="stat-map-title-col col">
+                        <h2>Vivamus tempus quis mi eget facilisis dolor orci, sagittis sed nisi vel</h2>
+                    </div>
+                </div>
+                <div class="stat-map-content-row row">
+                    <div class="stat-content-col col-sm-3">
+                        <div class="single-stat">
+                            <div class="stat-number">
+                                Number
+                            </div>
+                            <div class="stat-text">
+                                Text
+                            </div>
+                        </div>
+                        <div class="single-stat">
+                            <div class="stat-number">
+                                Number
+                            </div>
+                            <div class="stat-text">
+                                Text
+                            </div>
+                        </div>
+                        <div class="single-stat">
+                            <div class="stat-number">
+                                Number
+                            </div>
+                            <div class="stat-text">
+                                Text
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-map-col col-sm-3">
+                        <div class="stat-map-image">
+                            Map Image
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quote-logo-slider-section">
+            <div class="quote-logo-slider-container container">
+                <div class="quote-logo-slider-row row">
+                    <div class="quote-logo-title-col col-sm-3">
+                        <h2>
+                            Aliquam id erat sit amet
+                        </h2>
+                        <p>
+                            am libero libero, pellentesque sed lorem vel, dapibus posuere orci.
+                        </p>
+                    </div>
+                    <div class="quote-logo-quote-content-col col-sm-9">
+                        <div class="logo-slider">
+                            Slider
+                        </div>
+                        <div class="quote-callout">
+                            <blockquote>“Mauris pellentesque justo tristique nunc fringilla, ac eleifend dui pulvinar.
+                                Ut posuere magna id massa eleifend, ut
+                                pharetra enim tempor.”</blockquote>
+                            <div class="quote-attribute wrapper">
+                                First Lastname
+                                Title, Company
+                                <a class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call-to-action-section">
+            <div class="call-to-action-container container">
+                <div class="call-to-action-row row">
+                    <div class="col-sm-6 call-to-action-text">
+                        <h2>Quisque consectetur lectus enim</h2>
+                        <p>Vivamus metus ex, fringilla at cursus ultricies, eleifend a felis.</p>
+                    </div>
+                    <div class="col-sm-6 call-to-action-button text-end">
+                        <a>Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
 
@@ -138,14 +346,7 @@
                 </div>
 
             </div>
-
-
-
         </div>
-
-
-
-
     </footer>
 
 
