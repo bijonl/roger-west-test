@@ -1,0 +1,50 @@
+:root {
+    --bs-primary: #3772FF; 
+    --bs-primary-rgb: 55, 114, 255; 
+    --bs-body-color: #000000; 
+    --bs-border-radius: 50px; 
+    --bs-btn-font-size: 14px; 
+    --bs-border-width: 1.5px; 
+   
+}
+
+.btn {
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-line-height: 0.875rem; 
+    text-transform: uppercase;
+     --bs-btn-padding-y: 20px; 
+    --bs-btn-padding-x: 30px; 
+    
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #000000CC; 
+    --bs-btn-border-color: #C7C8CA; 
+    --bs-btn-hover-bg: var(--bs-primary); 
+    --bs-btn-hover-color: #FFFFFF;  
+    &.btn-arrow {
+        img {
+            margin-left: 15px; 
+        }
+        &:hover {
+            img {
+            filter: brightness(0) invert(1);
+            }   
+        }
+    }
+}
+
+
+
+.bg-primary {
+    color: #FFFFFF; 
+    .btn-outline-primary  {
+        --bs-btn-color: #ffffff; 
+         &.btn-arrow {
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+    }
+}
