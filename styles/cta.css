@@ -1,0 +1,16 @@
+.call-to-action-section {
+    padding-top: 150px; 
+    padding-bottom: 150px; 
+    .call-to-action-container {
+        .call-to-action-row {
+            .call-to-action-text {
+                p {
+                    font-size: 24px; 
+                }
+            }
+            .call-to-action-button {
+                font-size: 75px; 
+            }
+        }
+    }
+}

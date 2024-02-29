@@ -69,6 +69,12 @@
     font-weight: 600; 
 }
 
+.small-title {
+    font-size: 18px; 
+    line-height: 14px; 
+    color: var(--bs-primary)
+}
+
 section {
     padding-top: 60px; 
     padding-bottom: 60px; 
@@ -76,6 +82,14 @@ section {
 
 ul {
     font-weight: 600; 
+}
+
+.slanted-arrow-link {
+    color: white;
+    text-decoration: none; 
+    img {
+        margin-left: 20px; 
+    }
 }
 
 .bordered-list {
