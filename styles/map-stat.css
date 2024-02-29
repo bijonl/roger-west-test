@@ -1,0 +1,25 @@
+.stat-map-section {
+    .stat-map-container {
+        padding-top: 80px; 
+        padding-bottom: 160px; 
+        background-color: #F8F8F8; 
+        .stat-map-title-row {
+            padding-bottom: 100px; 
+        }
+        .stat-map-content-row {
+            .stat-content-col {
+                .single-stat {
+                    padding-top: 35px; 
+                    padding-bottom: 35px; 
+                    border-top: solid 1px var(--rw-border-color); 
+                    .stat-text {
+                        font-size: 22px; 
+                        line-height: 34px; 
+                        font-weight: 600;
+                    }
+                }
+            }
+            
+        }
+    }
+}

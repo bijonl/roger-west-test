@@ -1,0 +1,29 @@
+.tile-callout-section {
+    .tile-callout-container {
+        .tile-callout-title-row {
+            padding-bottom: 65px;
+        }
+        .tile-callout-row {
+            
+            .tile-callout-col {
+                .single-tile-content-wrapper {
+                    aspect-ratio: 3/2;
+                    display: flex; 
+                    align-items: center;
+                    padding: 40px 50px; 
+                    .icon-text-wrapper {
+                        width: 35%; 
+                        font-size: 24px; 
+                    }
+                    .icon-tile {
+                        margin-left: auto; 
+                        img {
+                            width: 65px; 
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
