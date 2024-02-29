@@ -72,6 +72,8 @@
 .small-title {
     font-size: 18px; 
     line-height: 14px; 
+    font-weight: 600; 
+    text-transform: uppercase;
     color: var(--bs-primary)
 }
 

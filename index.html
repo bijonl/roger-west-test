@@ -63,8 +63,25 @@
 
 
     <main id="page" class="main" role="main">
-        <section class="bg-primary container" id="hero-area">
-            Hero Area
+        <section class="bg-primary vh-100 hero-section" id="hero-area">
+            <div class="hero-content-container container h-100">
+                <div class="hero-content-row row h-100 align-items-end">
+                    <div class="col-sm-6 hero-text-col">
+                        <div class="hero-content-wrapper">
+                            <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+                            <div class="hero-subtitle-text-wrapper d-flex pt-5">
+                                <p class="w-50">
+                                    Nulla sit amet sapien ut lacus euismod rhoncus eu tincidunt eros.
+                                </p>
+                                <a class="btn btn-outline-primary btn-arrow ms-auto">
+                                    Learn More
+                                    <img alt="button-arrow" src="images/button-arrow.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="bg-white about-us-section" id="section-1">
             <div class="about-us-section-container container">
@@ -100,17 +117,51 @@
         <section class="wildcard-section">
             <div class="wildcard-content-container container">
                 <div class="wildcard-content-row row">
-                    <div class="col-sm-2 wildcard-content-title-col">
-                        <h6>Lorem ipsum</h6>
-                    </div>
-                    <div class="ms-auto col-sm-3 single-wildcard-content-tile">
-                        Wildcard
+                    <div class="col-sm-2 me-auto wildcard-content-title-col">
+                        <h6 class="small-title">Lorem ipsum</h6>
                     </div>
                     <div class="col-sm-3 single-wildcard-content-tile">
-                        Wildcard
+                        <div class="single-wc-content-wrapper position-relative">
+                            <div class="wc-overlay bg-primary"></div>
+                            <div class="wc-background-image" style="background-image:url('images/med-devices.jpeg')">
+                                <div class="wc-arrow-img">
+                                    <img src="images/slanted-arrow.svg" class="slanted-arrow">
+                                </div>
+                                <div class="wc-title-wrapper w-50">
+                                    <h4>Aliquam id</h4>
+                                    <p>Integer sedInteger sedInteger sedInteger sedInteger sedInteger sed</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-3 single-wildcard-content-tile">
-                        Wildcard
+                        <div class="single-wc-content-wrapper position-relative">
+                            <div class="wc-overlay bg-primary"></div>
+                            <div class="wc-background-image"
+                                style="background-image:url('images/field-service-image.jpeg')">
+                                <div class="wc-arrow-img">
+                                    <img src="images/slanted-arrow.svg" class="slanted-arrow">
+                                </div>
+                                <div class="wc-title-wrapper w-50">
+                                    <h4>Integer sed</h4>
+                                    <p>Integer sedInteger sedInteger sedInteger sedInteger sedInteger sed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 single-wildcard-content-tile">
+                        <div class="single-wc-content-wrapper position-relative">
+                            <div class="wc-overlay bg-primary"></div>
+                            <div class="wc-background-image" style="background-image:url('images/pharma.jpeg')">
+                                <div class="wc-arrow-img">
+                                    <img src="images/slanted-arrow.svg" class="slanted-arrow">
+                                </div>
+                                <div class="wc-title-wrapper w-50">
+                                    <h4>Pellentesque</h4>
+                                    <p>Integer sedInteger sedInteger sedInteger sedInteger sedInteger sed</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

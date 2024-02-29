@@ -1,0 +1,67 @@
+.wildcard-section {
+    .wildcard-content-container {
+        .wildcard-content-row {
+            .wildcard-content-title-col {
+
+            }
+            .single-wildcard-content-tile {
+                &:hover {
+                    .single-wc-content-wrapper {
+                        .wc-overlay {
+                            opacity: 1; 
+                        }
+                        .wc-background-image  {
+                            .wc-title-wrapper {
+                                p {
+                                     height: auto; 
+                                    opacity: 1; 
+                                }
+                            }
+                        }
+                    }
+                }
+                .single-wc-content-wrapper {
+                    .wc-overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        opacity: 0;
+                        z-index: 2;
+                        transition: all 0.5s ease-in;
+                    }
+                    .wc-background-image {
+                        position: relative;
+                        padding: 30px; 
+                        aspect-ratio: 1 / 1;
+                        background-position: center;
+                        object-position: center;
+                        background-size: cover;
+                        .wc-arrow-img {
+                            position: relative; 
+                            z-index: 2;
+                            img {
+                                width: 36px; 
+                                position: absolute; 
+                                right: 0; 
+                            }
+                        }
+                        .wc-title-wrapper {
+                            bottom: 20px; 
+                            color: white; 
+                            position: absolute; 
+                            z-index: 2;
+                            p {
+                                height: 0; 
+                                opacity: 0;
+                                transition: all 0.5s ease-in; 
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
