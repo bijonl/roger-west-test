@@ -5,6 +5,11 @@
     --bs-border-radius: 50px; 
     --bs-btn-font-size: 14px; 
     --bs-border-width: 1.5px; 
+    --bs-body-font-size: 1.125rem; 
+    --bs-body-line-height: 1.375rem; 
+    --bs-dark-rgb: 8,7,8;
+    --rw-border-color: #58595B; 
+
    
 }
 
@@ -34,12 +39,14 @@
     }
 }
 
-
-
-.bg-primary {
+.bg-primary, .bg-dark {
     color: #FFFFFF; 
     .btn-outline-primary  {
         --bs-btn-color: #ffffff; 
+        --bs-btn-hover-color: #FFFFFF;  
+        --bs-btn-hover-bg: #FFFFFF; 
+
+
          &.btn-arrow {
             img {
                 filter: brightness(0) invert(1);
@@ -48,3 +55,46 @@
 
     }
 }
+
+.h1, h1 {
+    font-size: 72px; 
+    font-weight: 600; 
+    line-height: 86px; 
+
+}
+
+.h2, h2 {
+    font-size: 37px; 
+    line-height: 44px; 
+    font-weight: 600; 
+}
+
+section {
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+}
+
+ul {
+    font-weight: 600; 
+}
+
+.bordered-list {
+    list-style: square;
+    li {
+        border-top: solid 1px var( --rw-border-color); 
+        padding-top: 15px; 
+        padding-bottom: 30px; 
+        list-style-position: inside;
+        &:last-child {
+            padding-bottom: 0; 
+        }
+        &::marker  {
+            color: var(--bs-primary); 
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1520px;
+}}

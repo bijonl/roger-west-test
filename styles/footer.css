@@ -1,0 +1,68 @@
+footer {
+    padding-top: 90px; 
+    padding-bottom: 180px; 
+    .footer-content-container {
+        .footer-content-row {
+            .footer-menu-col {
+                .footer-menu-row {
+                    .footer-menu {
+                        h6 {
+                            margin-bottom: 0; 
+                            font-size: 16px; 
+                            line-height: 24px;
+                            font-weight: 600; 
+                            color: white; 
+                            padding-bottom: 25px; 
+                        }
+                        ul {
+                            padding-left: 0; 
+                            li {
+                                list-style: none;
+                                color: #939598; 
+                                line-height: 29px; 
+                                padding-bottom: 30px; 
+                                margin-bottom: 0; 
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-logo-col {
+                .footer-logo-wrapper {
+                    padding-bottom: 80px; 
+                }
+                .footer-social-wrapper {
+                    ul {
+                        list-style-type: none;
+                        li {
+                            margin-left: 20px; 
+                            i {
+                                font-size: 24px; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-copyright-row {
+            padding-top: 60px;
+            border-top: solid 1px var( --rw-border-color);
+            .footer-copyright-buttons {
+                .buttons-wrapper {
+                    a {
+                        margin-right: 20px; 
+                        &:hover {
+                            color: rgb(var(--bs-dark-rgb)); 
+                            border-color: rgb(var(--bs-dark-rgb)); 
+                        }
+                    }
+                }          
+            }
+            .footer-copyright-text{
+                    p {
+                        font-size: 14px; 
+                    }
+                }
+        }
+    }
+}

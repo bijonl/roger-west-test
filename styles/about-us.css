@@ -1,0 +1,10 @@
+.about-us-section {
+    padding-top: 120px; 
+    .about-us-section-container {
+        .about-us-section-title-row {
+            .about-us-section-col {
+                padding-bottom: 30px; 
+            }
+        }
+    }
+}
