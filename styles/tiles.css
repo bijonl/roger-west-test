@@ -4,8 +4,13 @@
             padding-bottom: 65px;
         }
         .tile-callout-row {
-            
             .tile-callout-col {
+                transform: translateY(0); 
+
+                &:hover {                
+                    animation: bounce 1.2s linear infinite; 
+                    animation-play-state: running;
+                }
                 .single-tile-content-wrapper {
                     aspect-ratio: 3/2;
                     display: flex; 
@@ -26,4 +31,11 @@
             }
         }
     }
+}
+
+@keyframes bounce {
+    0% { transform:translateY(0); }
+    50% { transform:translateY(-20px); }
+    75% { transform:translateY(-10px); }
+    100% { transform:translateY(0); }
 }
