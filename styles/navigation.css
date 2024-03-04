@@ -1,0 +1,34 @@
+.utility-nav-container {
+    padding-bottom: 40px;
+    padding-top: 20px;  
+}
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 25px;
+    .navbar-nav {
+        li {
+            padding-right: 60px;
+            font-size: 16px; 
+            a {
+                opacity: 1;
+                color: rgba(255,255,255,1); 
+
+            }
+            &:last-child {
+                padding-right: 0; 
+            }
+            &.dropdown {
+                ul.dropdown-menu {
+                    border-radius: 10px;
+                    li {
+                        a {
+                            color: var(--bs-body-text); 
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
