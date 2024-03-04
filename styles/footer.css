@@ -22,6 +22,10 @@ footer {
                                 line-height: 29px; 
                                 padding-bottom: 30px; 
                                 margin-bottom: 0; 
+                                a {
+                                    text-decoration: none;
+                                    color: inherit; 
+                                }
                             }
                         }
                     }
