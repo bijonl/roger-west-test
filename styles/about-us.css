@@ -8,5 +8,12 @@
                 padding-bottom: 30px; 
             }
         }
+        .about-us-section-content-row {
+            .about-us-list-content {
+                @media (max-width: 576px) {
+                    margin-top: 25px; 
+                }
+            }
+        }
     }
 }

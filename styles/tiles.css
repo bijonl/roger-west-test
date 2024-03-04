@@ -6,6 +6,9 @@
         .tile-callout-row {
             .tile-callout-col {
                 transform: translateY(0); 
+                @media (max-width: 576px) {
+                    margin-bottom: 25px; 
+                }
 
                 &:hover {                
                     animation: bounce 1.2s linear infinite; 

@@ -28,14 +28,24 @@ footer {
                 }
             }
             .footer-logo-col {
+                
                 .footer-logo-wrapper {
                     padding-bottom: 80px; 
+                    @media (max-width: 576px) {
+                        text-align: center;
+                    }
+                    
                 }
                 .footer-social-wrapper {
                     ul {
                         list-style-type: none;
                         li {
                             margin-left: 20px; 
+                             @media (max-width: 576px) {
+                                &:first-child {
+                                    margin-left: 0; 
+                                }
+                            }
                             i {
                                 font-size: 24px; 
                             }
@@ -55,8 +65,12 @@ footer {
                             color: rgb(var(--bs-dark-rgb)); 
                             border-color: rgb(var(--bs-dark-rgb)); 
                         }
+                        @media (max-width: 576px) {
+                            margin-bottom: 20px; 
+                        }  
                     }
-                }          
+                }    
+                     
             }
             .footer-copyright-text{
                     p {

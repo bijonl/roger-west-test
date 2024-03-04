@@ -5,6 +5,10 @@
         .text-and-image-row {
         
             .text-col {
+                @media (max-width: 576px) {
+                    margin-bottom: 25px; 
+                }
+                
                 h2 {
                     padding-bottom: 30px; 
                 }
@@ -17,6 +21,11 @@
                     -moz-columns: 2;
                     padding-bottom: 50px; 
                     margin-bottom: 0; 
+                    @media (max-width: 576px) {
+                         columns: 1;
+                        -webkit-columns: 1;
+                        -moz-columns: 1;
+                    }
                 }
 
             }

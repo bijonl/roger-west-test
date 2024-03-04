@@ -16,6 +16,16 @@
    
 }
 
+body {
+    overflow-x: hidden;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 .btn {
     --bs-btn-font-size: 0.875rem;
     --bs-btn-line-height: 0.875rem; 
@@ -63,6 +73,11 @@
     font-size: 72px; 
     font-weight: 600; 
     line-height: 86px; 
+    @media (max-width: 576px) {
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 60px;
+    }
 
 }
 
@@ -102,6 +117,9 @@ ul {
 
 .bordered-list {
     list-style: square;
+     @media (max-width: 576px) {
+        padding-left: 0; 
+    }
     li {
         border-top: solid 1px var( --rw-border-color); 
         padding-top: 15px; 

@@ -1,7 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
     <title>Our Funky HTML Page</title>
     <meta name="description" content="Our first page">
     <meta name="keywords" content="html tutorial template">
@@ -45,7 +47,7 @@
                     </button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog container">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
@@ -125,7 +127,7 @@
                     <div class="col-sm-6 hero-text-col">
                         <div class="hero-content-wrapper">
                             <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
-                            <div class="hero-subtitle-text-wrapper d-flex pt-5">
+                            <div class="hero-subtitle-text-wrapper d-sm-flex pt-5">
                                 <p class="w-50">
                                     Nulla sit amet sapien ut lacus euismod rhoncus eu tincidunt eros.
                                 </p>
@@ -308,7 +310,7 @@
                     </div>
                 </div>
                 <div class="stat-map-content-row row">
-                    <div class="stat-content-col col-sm-3 ms-auto">
+                    <div class="stat-content-col col-12 col-md-3 ms-auto">
                         <div class="single-stat">
                             <div class="stat-number">
                                 <h3 class="h1">1500+</h3>
@@ -338,9 +340,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stat-map-col col-sm-8">
+                    <div class="stat-map-col col-12 col-md-8">
                         <div class="stat-map-image">
-                            <img src="images/map-stat.svg" />
+                            <img class="mw-100" src=" images/map-stat.svg" />
                         </div>
                     </div>
                 </div>
@@ -390,31 +392,33 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev w-auto" type="button"
-                                        data-bs-target="#carouselExample" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true">
-                                            <svg width="19" height="33" viewBox="0 0 19 33" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M17.7488 1.38125L1.74878 16.291L17.7488 31.2007"
-                                                    stroke="#939598" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
+                                    <div class="carousel-nav-buttons d-flex d-sm-block">
+                                        <button class="carousel-control-prev w-auto" type="button"
+                                            data-bs-target="#carouselExample" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true">
+                                                <svg width="19" height="33" viewBox="0 0 19 33" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.7488 1.38125L1.74878 16.291L17.7488 31.2007"
+                                                        stroke="#939598" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
 
-                                        </span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next w-auto" type="button"
-                                        data-bs-target="#carouselExample" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true">
-                                            <svg width="19" height="33" viewBox="0 0 19 33" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.74878 31.2013L17.7488 16.2916L1.74878 1.38184"
-                                                    stroke="#939598" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
+                                            </span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next w-auto" type="button"
+                                            data-bs-target="#carouselExample" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true">
+                                                <svg width="19" height="33" viewBox="0 0 19 33" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.74878 31.2013L17.7488 16.2916L1.74878 1.38184"
+                                                        stroke="#939598" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -452,11 +456,11 @@
         <section class="call-to-action-section bg-primary">
             <div class="call-to-action-container container">
                 <div class="call-to-action-row row align-items-center">
-                    <div class="col-sm-6 call-to-action-text">
+                    <div class="col-sm-6 call-to-action-text text-center text-sm-start">
                         <h2>Quisque consectetur lectus enim</h2>
                         <p>Vivamus metus ex, fringilla at cursus ultricies, eleifend a felis.</p>
                     </div>
-                    <div class="col-sm-6 call-to-action-button text-end">
+                    <div class="col-sm-6 call-to-action-button text-sm-end text-center">
                         <a class="slanted-arrow-link" type="button" class="modal-button" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Let's Talk
@@ -482,7 +486,7 @@
             <div class="footer-content-row row">
                 <div class="footer-menu-col  col-sm-8">
                     <div class="footer-menu-row row">
-                        <div class="footer-menu col">
+                        <div class="footer-menu col-12 col-sm text-center text-sm-start">
                             <h6>Who We Help</h6>
                             <ul>
                                 <li>Medical Devices</li>
@@ -490,16 +494,16 @@
                                 <li>Pharmaceuticals</li>
                             </ul>
                         </div>
-                        <div class="footer-menu col">
+                        <div class="footer-menu col-12 col-sm text-center text-sm-start">
                             <h6>Technology</h6>
                         </div>
-                        <div class="footer-menu col">
+                        <div class="footer-menu col-12 col-sm text-center text-sm-start">
                             <h6>About Us</h6>
                             <ul>
                                 <li>Careers</li>
                             </ul>
                         </div>
-                        <div class="footer-menu col">
+                        <div class="footer-menu col-12 col-sm text-center text-sm-start">
                             <h6>Resources</h6>
                             <ul>
                                 <li>Case Studies</li>
@@ -515,7 +519,7 @@
                         <img class="footer-logo-image" src="./images/footer-logo.svg">
                     </div>
                     <div class="footer-social-wrapper">
-                        <ul class="d-flex justify-content-end">
+                        <ul class="d-flex justify-content-sm-end justify-content-center">
                             <li><i class="fa-brands fa-linkedin-in"></i></li>
                             <li><i class="fa-brands fa-facebook-f"></i></li>
                         </ul>
@@ -525,13 +529,13 @@
 
             <div class="footer-copyright-row row">
                 <div class="col-sm-6 footer-copyright-buttons">
-                    <div class="d-flex buttons-wrapper">
+                    <div class="d-block d-sm-flex text-center text-sm-start buttons-wrapper">
                         <a class="btn btn-outline-primary">Contact Us</a>
                         <a class="btn btn-outline-primary">Customer Login</a>
                     </div>
                 </div>
                 <div class="col-sm-6 footer-copyright-text">
-                    <div class="text-wrapper text-end">
+                    <div class="text-wrapper text-center text-sm-end">
                         <p>Copyright © 2023 Roger West. All rights reserved.</p>
                     </div>
                 </div>

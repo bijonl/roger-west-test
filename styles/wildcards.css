@@ -2,9 +2,14 @@
     .wildcard-content-container {
         .wildcard-content-row {
             .wildcard-content-title-col {
-
+                @media (max-width: 576px) {
+                    margin-bottom: 25px; 
+                }
             }
             .single-wildcard-content-tile {
+                 @media (max-width: 576px) {
+                    margin-bottom: 25px; 
+                }
                 &:hover {
                     .single-wc-content-wrapper {
                         .wc-overlay {
