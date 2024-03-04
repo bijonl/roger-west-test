@@ -41,6 +41,9 @@ body {
     --bs-btn-hover-bg: var(--bs-primary); 
     --bs-btn-hover-color: #FFFFFF;  
     &.btn-arrow {
+        align-items: center;
+        display: flex;
+        width: fit-content; 
         img {
             margin-left: 15px; 
         }

@@ -45,6 +45,10 @@ footer {
                         list-style-type: none;
                         li {
                             margin-left: 20px; 
+                            a {
+                                text-decoration: none;
+                                color: inherit; 
+                            }
                              @media (max-width: 576px) {
                                 &:first-child {
                                     margin-left: 0; 
