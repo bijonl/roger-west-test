@@ -12,8 +12,11 @@
                 }
                 &:hover {
                     .single-wc-content-wrapper {
-                        .wc-overlay {
+                        .overlay.wc-overlay {
                             opacity: 1; 
+                        }
+                        .overlay.ada-overlay {
+                            display: none                        
                         }
                         .wc-background-image  {
                             .wc-title-wrapper {
@@ -26,16 +29,26 @@
                     }
                 }
                 .single-wc-content-wrapper {
-                    .wc-overlay {
+                    .overlay {
                         position: absolute;
                         top: 0;
                         left: 0;
                         right: 0;
                         bottom: 0;
-                        opacity: 0;
-                        z-index: 2;
-                        transition: all 0.5s ease-in;
+                        &.ada-overlay {
+                        background-color: black;
+                        opacity: 0.3;
+                        z-index: 1;
+                        }
+                        &.wc-overlay {
+                            opacity: 0;
+                            z-index: 2;
+                            transition: all 0.5s ease-in;
+                        }
+                        
+
                     }
+                    
                     .wc-background-image {
                         position: relative;
                         padding: 30px; 
