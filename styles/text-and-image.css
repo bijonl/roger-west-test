@@ -5,7 +5,7 @@
         .text-and-image-row {
         
             .text-col {
-                @media (max-width: 576px) {
+                @media (max-width: 992px) {
                     margin-bottom: 25px; 
                 }
                 

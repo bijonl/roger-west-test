@@ -10,7 +10,7 @@
             }
             .call-to-action-button {
                 font-size: 75px; 
-                @media (max-width: 576px) {
+                @media (max-width: 992px) {
                     font-size: 56px; 
                     margin-top: 35px; 
                 }
