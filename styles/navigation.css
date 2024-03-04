@@ -1,6 +1,46 @@
+.modal-content {
+    .modal-header {
+        border: 0; 
+    }
+    .modal-body {
+        form {
+            color: black; 
+            ul {
+                list-style: none;
+                li {
+                    padding-bottom: 20px; 
+                    &:last-child {
+                        padding-bottom: 0; 
+                    }
+                    input, textarea {
+                        width: 100%; 
+                    }
+                }
+            }
+
+        }
+    }
+     .modal-footer {
+        border: 0; 
+    }
+}
+    
+
 .utility-nav-container {
     padding-bottom: 40px;
     padding-top: 20px;  
+    button {
+        background: transparent; 
+        box-shadow: none;
+        border: 0; 
+        display: flex; 
+        color: white; 
+        align-items: center;
+        text-transform: uppercase;
+        svg {
+            margin-right: 10px; 
+        }
+    }
 }
 .navbar {
     position: absolute;

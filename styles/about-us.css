@@ -1,6 +1,8 @@
 .about-us-section {
     padding-top: 120px; 
+    padding-bottom: 0; 
     .about-us-section-container {
+        padding-bottom: 100px; 
         .about-us-section-title-row {
             .about-us-section-col {
                 padding-bottom: 30px; 

@@ -1,5 +1,7 @@
 .text-and-image-section {
+    padding-bottom: 0; 
     .text-and-image-container {
+        padding-bottom: 100px; 
         .text-and-image-row {
         
             .text-col {

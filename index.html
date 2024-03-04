@@ -32,15 +32,51 @@
         <div class="container utility-nav-container d-flex justify-content-end">
             <div class="row utility-nav-row">
                 <div class="utility-nav-content d-flex align-items-center">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
-                            stroke="#CDDCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                            stroke="#CDDCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <p class="mb-0">Customer Login</p>
+                    <button type="button" class="modal-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                                stroke="#CDDCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                                stroke="#CDDCFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="mb-0">Customer Login</p>
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    <h3 class="text-center">Contact Us Today</h3>
+                                    <form action="/my-handling-form-page" method="post">
+                                        <ul>
+                                            <li>
+                                                <label for="name">Name:</label>
+                                                <input type="text" id="name" name="user_name" />
+                                            </li>
+                                            <li>
+                                                <label for="mail">Email:</label>
+                                                <input type="email" id="mail" name="user_email" />
+                                            </li>
+                                            <li>
+                                                <label for="msg">Message:</label>
+                                                <textarea id="msg" name="user_message"></textarea>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <a type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,8 +118,6 @@
             </div>
         </div>
     </nav>
-
-
     <main id="page" class="main" role="main">
         <section class="bg-primary vh-100 hero-section" id="hero-area">
             <div class="hero-content-container container h-100">
@@ -106,7 +140,7 @@
             </div>
         </section>
         <section class="bg-white about-us-section" id="section-1">
-            <div class="about-us-section-container container">
+            <div class="about-us-section-container container section-border">
                 <div class="about-us-section-title-row row">
                     <div class="about-us-section-col col">
                         <h2 class="mb-0">Mauris euismod, magna nec</h2>
@@ -136,7 +170,7 @@
                 </div>
             </div>
         </section>
-        <section class="wildcard-section">
+        <section class="wildcard-section" id="section-2">
             <div class="wildcard-content-container container">
                 <div class="wildcard-content-row row">
                     <div class="col-sm-2 me-auto wildcard-content-title-col">
@@ -189,8 +223,8 @@
             </div>
         </section>
 
-        <section class="text-and-image-section">
-            <div class="text-and-image-container container">
+        <section class="text-and-image-section" id="section-3">
+            <div class="text-and-image-container container section-border">
                 <div class="text-and-image-row row gx-5 align-items-center">
                     <div class="text-col col-sm-5">
                         <h2>Curabitur ut augue non felis</h2>
@@ -423,7 +457,8 @@
                         <p>Vivamus metus ex, fringilla at cursus ultricies, eleifend a felis.</p>
                     </div>
                     <div class="col-sm-6 call-to-action-button text-end">
-                        <a class="slanted-arrow-link">
+                        <a class="slanted-arrow-link" type="button" class="modal-button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             Let's Talk
                             <img src="images/slanted-arrow.svg" class="slanted-arrow">
                         </a>

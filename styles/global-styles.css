@@ -11,6 +11,7 @@
     --bs-dark-rgb: 8,7,8;
     --rw-border-color: #58595B; 
     --bs-font-sans-serif: 'Montserrat', 'san-serif'; 
+    --rw-section-border-color: #080708; 
 
    
 }
@@ -82,6 +83,9 @@
 section {
     padding-top: 60px; 
     padding-bottom: 60px; 
+    .section-border {
+        border-bottom: solid 2px var(--rw-section-border-color); 
+    }
 }
 
 ul {
