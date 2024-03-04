@@ -67,6 +67,10 @@ body {
         }
 
     }
+    a:focus {
+        border: solid 1px white; 
+        border-radius: 12px; 
+    }
 }
 
 .h1, h1 {
